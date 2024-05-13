@@ -1,0 +1,419 @@
+
+body {
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+	font-family: Arial, sans-serif;
+}
+
+.logo
+{
+	width: fit-content;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	margin-left: 420px;
+	margin-top: 10px;
+}
+
+
+.button
+{
+	border-radius: 4px;
+	background-color: burlywood;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+    padding: 5px;
+    width: 90px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 0px;
+	position: initial;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.button {
+	position: relative;
+	background-color:#FFFFFF;
+	border: none;
+	font-size: 15px;
+	color: black;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+  }
+  
+
+
+    .button:after {
+	content: "";
+
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+
+.button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+}
+
+
+
+
+
+
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+header {
+	padding: 20px;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.logo img {
+	width: 200px;
+	height: 200px;
+    display: block;
+	margin-left: 530px;
+}
+
+
+nav {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 50px;
+}
+
+nav ul {
+	display: flex;
+	font-size: 20px;
+
+	flex-direction: row;
+	margin: 0px;
+	padding: 10px;
+	list-style: none;
+	width: 20px;
+	margin-left: 410px;
+	  
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+}
+
+nav form {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+nav input[type=text] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-right: 10px;
+}
+
+nav button[type=submit] {
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+nav button[type=submit]:hover {
+	background-color: #FFFFFF;
+	color: black;
+}
+
+main {
+	padding: 50px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.books {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.book {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 20px;
+padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book img {
+	width: 150px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.book h3 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.book p {
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+.book button {
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.book button:hover{
+	background-color: #FFFFFF;
+	color: black;
+}
+
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.categories li {
+	margin: 0 20px 20px 0;
+ 	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.categories li a {
+	font-size: 18px;
+}
+
+.reviews {
+	list-style: none;
+	padding: 0;
+}
+
+.reviews li {
+	margin-bottom: 20px;
+ 	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reviews p {
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+.wishlist {
+	list-style: none;
+	padding: 0;
+}
+
+.wishlist li {
+	margin-bottom: 10px;
+}
+
+.wishlist a {
+	font-size: 18px;
+}
+* {
+	box-sizing: border-box;
+  }
+
+  search-container {
+	display: flex;
+	align-items: center;
+  }
+  css
+Copy
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  width: 300px;
+
+}
+
+.search-container button[type=submit] {
+  padding: 10px;
+  background-color:burlywood;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.search-container button:hover {
+  background-color:burlywood;
+}
+
+.fa {
+  margin-right: 5px;
+}
+  
+  .fa {
+	margin-right: 5px;
+  }
+  
+footer {
+ 	padding: 20px;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	header {
+	display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 0;
+	}
+	
+	nav form {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	
+	nav input[type=text] {
+		width: 100%;
+	}
+	
+	nav button[type=submit] {
+		width: 100%;
+	}
+	
+	.books {
+		display: block;
+	}
+	
+	.book {
+		margin: 0 0 20px 0;
+	}
+	
+	.categories {
+		flex-direction: column;
+	}
+	
+	.categories li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+} */
